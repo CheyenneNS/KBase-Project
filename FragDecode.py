@@ -74,7 +74,7 @@ def overlap(string1, string2):
 
 	for i in range(len(string2)):
 		for j in range(len(string1)):
-			if a.endswith(string2[:i + 1], j):
+			if string1.endswith(string2[:i + 1], j):
 				overlaps.append((i, j))
 
 	return max(overlaps) if overlaps else (0, -1) 
